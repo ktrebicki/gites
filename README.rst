@@ -28,19 +28,13 @@ Package status
     :target: https://coveralls.io/r/ktrebicki/gites?branch=v0.0.0
     :alt: Coverage Status
 
-.. image:: https://requires.io/github/ktrebicki/gites/requirements.svg?tag=v0.0.0
-     :target: https://requires.io/github/ktrebicki/gites/requirements/?tag=v0.0.0
-     :alt: Requirements Status
-
-python package template - to make easier for me to duplicate general package structure.
+git log analyser with web-based GUI - Find interesting facts about your repo contributions' history.
 
 Package resources
 -----------------
 
 * Bug tracker: https://github.com/ktrebicki/gites/issues
 * Documentation: http://gites.readthedocs.org/
-
-
 
 
 Travis-ci
