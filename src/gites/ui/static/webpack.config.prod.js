@@ -4,7 +4,7 @@ var path = require('path');
 var config = {
     context: __dirname,
     entry: {
-        app: path.join(__dirname, './main.js'),
+        app: path.join(__dirname, './app.js'),
     },
     output: {
         path: path.join(__dirname, './dist'),
