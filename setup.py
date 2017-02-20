@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import os
@@ -19,7 +20,10 @@ def read(fname):
     """
     return open(os.path.join(here, fname)).read()
 
-requirements = []
+requirements = [
+    'path.py==10.1',
+    'Flask==0.12',
+]
 
 test_requires = [
     'pytest',
@@ -43,7 +47,7 @@ setup(
     url='https://github.com/ktrebicki/gites',
     license="MIT License",
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 1 - Planning',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
@@ -51,7 +55,9 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
-        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Software Development :: Version Control',
+        'Topic :: Software Development :: Quality Assurance',
+        'Topic :: Scientific/Engineering :: Information Analysis'
     ],
     package_dir = {'': 'src'},
     packages=find_packages('src'),
