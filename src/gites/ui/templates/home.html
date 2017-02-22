@@ -10,38 +10,10 @@
         <link rel="shortcut icon" href="{{ static_url('img/favicon.ico') }}">
         <link rel="stylesheet" type="text/css" href="{{ static_url('dist/style.css') }}">
 
-        <!-- JQuery and Boostrap scripts -->
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-                integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-                crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-                crossorigin="anonymous">
-        </script>
+        <script src="{{ static_url('dist/vendor.js')}}"type="text/javascript"></script>
     </head>
     <body>
-        <div class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a href="#" class="navbar-brand">
-                <img class="brand-image" alt="Gites logo" src="{{ static_url('img/twigs-logo.jpg') }}" height="32" width="32">
-                <div class="brand-text">GITES</div>
-              </a>
-            </div>
-            <div class="navbar-collapse collapse" id="navbar-main">
-              <ul class="nav navbar-nav">
-                <li>
-                  <a href="#">Analyse</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-        </div>
-
-        <script src="{{ static_url('dist/app.js')}}"type="text/javascript"></script>
+        <main id="root"></main>
+        <script src="{{ static_url('dist/main.js')}}"type="text/javascript"></script>
     </body>
 </html>

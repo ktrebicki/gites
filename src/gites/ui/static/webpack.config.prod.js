@@ -4,11 +4,12 @@ var path = require('path');
 var config = {
     context: __dirname,
     entry: {
-        app: path.join(__dirname, './app.js'),
+        vendor: ['jquery', 'react', 'react-dom', 'react-bootstrap'],
+        main: path.join(__dirname, './components/pages/main.jsx'),
     },
     output: {
         path: path.join(__dirname, './dist'),
-        filename: '[name].js',
+        filename: '[name].js'
     },
     module: {
         rules: [
@@ -24,8 +25,22 @@ var config = {
         ]
     },
     resolve: {
-      extensions: ['js', 'jsx']
-    }
+        extensions: ['.js', '.jsx']
+    },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor',
+            minChunks: function (module) {
+               // this assumes your vendor imports exist in the node_modules directory
+               return module.context && module.context.indexOf('node_modules') !== -1;
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        })
+    ]
 }
 
 module.exports = config;

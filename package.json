@@ -6,7 +6,8 @@
     "clean": "rm -rf src/gites/ui/static/dist",
     "styles": "node_modules/.bin/lessc src/gites/ui/static/less/style.less src/gites/ui/static/dist/style.css --source-map=src/gites/ui/static/dist/style.css.map --compress",
     "prebuild": "npm run clean",
-    "build": "npm run styles && ./node_modules/.bin/webpack --progress --colors --config src/gites/ui/static/webpack.config.prod.js"
+    "build": "npm run styles && ./node_modules/.bin/webpack --progress --colors --config src/gites/ui/static/webpack.config.prod.js",
+    "watch": "./node_modules/.bin/webpack --colors --config src/gites/ui/static/webpack.config.prod.js --watch"
   },
   "dependencies": {
     "babel-core": "^6.23.1",
@@ -16,6 +17,7 @@
     "jquery": "^3.1.1",
     "less": "^2.7.2",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
     "webpack": "^2.2.1"
   },
