@@ -2,7 +2,7 @@ import React from 'react'
 import { Jumbotron } from 'react-bootstrap'
 
 
-const UploadJumbotron = (props) => {
+const JumbotronOrganism = (props) => {
     return (
       <Jumbotron>
         <div className="container">
@@ -13,4 +13,4 @@ const UploadJumbotron = (props) => {
     )
 }
 
-export default UploadJumbotron
+export default JumbotronOrganism

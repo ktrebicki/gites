@@ -2,7 +2,7 @@ import React from 'react'
 import { Navbar } from 'react-bootstrap'
 
 
-const MainNavbar = (props) => {
+const NavbarOrganism = (props) => {
     return (
         <Navbar>
           <Navbar.Header>
@@ -14,4 +14,4 @@ const MainNavbar = (props) => {
     )
 }
 
-export default MainNavbar
+export default NavbarOrganism
