@@ -1,17 +1,17 @@
 import React from 'react'
-import { Navbar } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap'
 
 
-const GitesNavbar = () => {
+const MainNavbar = (props) => {
     return (
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-                <a href="#">Gites</a>
+                <a href={ props.href }>{ props.text }</a>
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>
     )
 }
 
-export default GitesNavbar
+export default MainNavbar
