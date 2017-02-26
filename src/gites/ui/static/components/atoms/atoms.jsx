@@ -46,7 +46,7 @@ class CopyInput extends React.Component {
                 <FormControl.Feedback />
               </InputGroup>
               <ControlLabel onClick={() => this.setState({copied: false})}>
-                {this.state.copied ? 'Copied succesfully!' : ''}
+                {this.state.copied ? 'Copied to the clipboard. Paste it into your terminal now.' : ''}
               </ControlLabel>
             </FormGroup>
         )
