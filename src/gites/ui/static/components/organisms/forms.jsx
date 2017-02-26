@@ -8,13 +8,13 @@ import { GlyphWellHorizontal } from '../molecules/widgets'
 
 export const UploadForm = (props) => {
     return (
-        <form method="post" enctype="multipart/form-data" className="upload-form">
+        <form method="post" encType="multipart/form-data" className="upload-form">
             <GlyphWellHorizontal size="large" glyph="console">
                 <Col md={3}>
                     <p>Generate a history file</p>
                 </Col>
                 <Col md={8}>
-                    <CopyInput />
+                    <CopyInput value='git log --pretty=format:"%an,%ad:%s" --shortstat > history.log'/>
                 </Col>
             </GlyphWellHorizontal>
 
